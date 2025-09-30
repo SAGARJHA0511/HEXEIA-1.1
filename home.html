@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hexeia | Space Tech Innovators</title>
+  <meta name="description" content="Hexeia provides innovative space technology solutions including satellite systems and components.">
+  <link rel="icon" type="image/x-icon" href="Hexeiatablogo-removebg-preview.png">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+  <link rel="preload" href="home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="home.css"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <script defer src="home.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Hexeianewlogo-removebg-preview.png" alt="HEXEIA Logo" width="120" height="40" loading="eager" />
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="Solutionspage.html">Solutions</a></li>
+      <li><a href="aboutuspage.html">About Us</a></li>
+      <li><a href="Contactuspage.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="bg-video" playsinline preload="metadata" poster="video-poster.jpg">
+      <source src="space123.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-text">
+      <h1>Engineering the Future of Space</h1>
+      <p>Driven by Innovation, Powered by Passion</p>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="solutions-slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="bus.jpg" alt="Satellite Bus" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1>Satellite Bus</h1>
+              <p class="description">
+                Modular, mission-ready platforms from CubeSats to microsats—engineered for fast integration and reliable operations. 
+                We optimize mass, power, and thermal from day one, so you launch on schedule and scale your constellation without rework.
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="newadcs.jpg" alt="ADCS (Attitude Determination & Control)" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1><span>ADCS</span><br />(Attitude Determination & Control System)</h1>
+              <p class="description">
+                Precision pointing and agile slews with robust safe-mode behavior. Our sensor-fusion and control algorithms deliver stable imaging, tight jitter performance, and smooth maneuvering—so your payload always gets the shot.     
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Remaining slides follow the same pattern with optimized img tags -->
+         <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="power.jpg" alt="Power Subsystems (EPS/PCDU)" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1><span>Power Subsystems</span></h1>
+              <p class="description">
+               High-efficiency MPPT, smart battery management, and fault-tolerant distribution in a compact footprint. Designed for continuous uptime with load shedding, inrush control, and telemetry that keeps you ahead of anomalies.    
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="communication2.jpg" alt="Communication Subsystems" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1><span>Communication</span><br />Subsystems</h1>
+              <p class="description">
+                From resilient UHF command links to high-rate S/X-band downlinks, we deliver clean RF chains and SDR flexibility. Link-budgeted, tested, and ground-segment ready—so your data flows the first time and every time.
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="Antenna2.jpg" alt="Antennas" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1>Antennas</h1>
+              <p class="description">
+                Deployable and fixed antennas tuned to your mission bands for maximum gain and pattern stability. We handle the full chain—EM simulation, matching, and environmental testing—to keep links locked in orbit.
+   
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="newobc.jpg" alt="OBC" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1><span>OBC</span><br />(On-Board Computer)</h1>
+              <p class="description">
+                Radiation-tolerant compute with secure boot, watchdogs and real-time tasking. Fast integrations via clean APIs and flight-proven middleware* that keep the bus responsive and your software updates painless.   
+              </p>
+              <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="swiper-slide">
+          <div class="split-section">
+            <div class="left-image">
+              <img src="Structure2.jpg" alt="Structure" width="500" height="300" loading="lazy" />
+            </div>
+            <div class="right-content">
+              <p class="section-label">SPACE SOLUTIONS</p>
+              <h1>Structure</h1>
+              <p class="description">
+                Lightweight, stiff, and thermally disciplined frames using space-grade aluminum and composite options. DFM-ready for local manufacturing, with smart harnessing and access panels that make AIT fast and frustration-free.   
+              </p>
+              <!-- <button class="learn-btn">LEARN MORE</button> -->
+               <a href="/Solutionspage.html" class="learn-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Navigation Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <video autoplay muted loop playsinline class="background-video" preload="metadata" poster="cta-poster.jpg">
+      <source src="backgroung.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="cta-container">
+      <h1>Explore Satellite Bus Solutions</h1>
+      <p>
+        Discover our advanced satellite bus platforms, designed for reliability and performance in space missions.
+      </p>
+      <a href="/Solutionspage.html" class="cta-button">Explore Solutions</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+  
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="footer-top">
+      <div class="footer-col logo-col">
+        <img src="Hexeiatablogo-removebg-preview.png" alt="Logo" class="footer-logo" width="80" height="80" loading="lazy" />
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Solutionspage.html">Solutions</a></li>
+          <li><a href="aboutuspage.html">About Us</a></li>
+          <li><a href="Contactuspage.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">Clients</a></li>
+          <li><a href="aboutuspage.html">Team</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <a href="Contactuspage.html" class="footer-btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HEXEIA. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS loaded at the end -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  
+</body>
+</html>

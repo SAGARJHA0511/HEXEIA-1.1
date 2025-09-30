@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hexeia | Contact Us - Space Tech Innovators</title>
+  <meta name="description" content="Contact Hexeia for inquiries about satellite bus solutions and space technology innovations.">
+  <link rel="icon" type="image/x-icon" href="Hexeiatablogo-removebg-preview.png">
+  <link rel="stylesheet" href="Contactuspage.css">
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://maps.googleapis.com">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Hexeianewlogo-removebg-preview.png" alt="HEXEIA Logo" width="120" height="40" loading="eager" />
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Solutionspage.html">Solutions</a></li>
+        <li><a href="aboutuspage.html">About Us</a></li>
+        <li><a href="Contactuspage.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We're here to help. Reach out to us with any questions or inquiries about our satellite bus solutions.</p>
+      </div>
+
+      <div class="form-container">
+        <form method="POST" id="form" class="contact-form">
+          <input type="hidden" name="access_key" value="2a9a2662-86d6-441f-8737-83e173d3cfe0">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="company" placeholder="Your Company (Optional)">
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden">
+          <button type="submit">Submit Form</button>
+          <div id="result"></div>
+        </form>
+
+        <div class="contact-info">
+          <h2>Our Contact Information</h2>
+          <p><i class="fas fa-map-marker-alt"></i> Address: 388, Vasantha Ruthu, ITPL Main Road, Kundalahalli. BENGALURU - 560037</p>
+          <p><i class="fas fa-phone"></i> Phone: +91-9741896297</p>
+          <p><i class="fas fa-envelope"></i> Email: support@hexeia.com</p>
+          <p><i class="fas fa-clock"></i> Business Hours: Mon-Fri, 9AM-5PM</p>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <h2>Find Us</h2>
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2055362909505!2d77.71388011065493!3d12.958695887302722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13bf1d5a5ed5%3A0xb3cba0b8fb84e899!2sVasantha%20Ruthu!5e0!3m2!1sen!2sin!4v1754515116293!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Hexeia Office Location"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="footer-top">
+      <div class="footer-col logo-col">
+        <img src="Hexeiatablogo-removebg-preview.png" alt="Logo" class="footer-logo" width="80" height="80" loading="lazy" />
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Solutionspage.html">Solutions</a></li>
+          <li><a href="aboutuspage.html">About Us</a></li>
+          <li><a href="Contactuspage.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">Clients</a></li>
+          <li><a href="aboutuspage.html">Team</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <a href="Contactuspage.html" class="footer-btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HEXEIA. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for form submission and mobile menu -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+      }
+      
+      // Close mobile menu when clicking on a link
+      const navItems = document.querySelectorAll('.nav-links a');
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+        });
+      });
+      
+      // Form submission
+      const form = document.getElementById('form');
+      const result = document.getElementById('result');
+      
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Show loading state
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          submitButton.textContent = "Please wait...";
+          submitButton.disabled = true;
+          
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+          
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: json
+          })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              result.innerHTML = "Form submitted successfully! We'll get back to you soon.";
+              result.className = "success";
+            } else {
+              console.log(response);
+              result.innerHTML = json.message || "Something went wrong!";
+              result.className = "error";
+            }
+          })
+          .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong! Please try again later.";
+            result.className = "error";
+          })
+          .then(function() {
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+            form.reset();
+            setTimeout(() => {
+              result.style.display = "none";
+              result.className = "";
+            }, 5000);
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
